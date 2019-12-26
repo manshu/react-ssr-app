@@ -202,11 +202,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Home = function Home() {
     return _react2.default.createElement(
         "div",
-        null,
+        { className: "h-screen container mx-auto" },
         _react2.default.createElement(
-            "h1",
-            { className: "text-2xl text-green-500" },
-            "Coming Soon 2020"
+            "div",
+            { className: "flex justify-center items-center" },
+            _react2.default.createElement(
+                "h1",
+                { className: "text-2xl text-red-500" },
+                "Coming Soon 2020"
+            )
         )
     );
 };
