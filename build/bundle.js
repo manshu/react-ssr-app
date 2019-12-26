@@ -206,7 +206,7 @@ var Home = function Home() {
         _react2.default.createElement(
             "h1",
             { className: "text-2xl text-green-500" },
-            "Hello World"
+            "Coming Soon 2020"
         )
     );
 };
