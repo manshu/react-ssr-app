@@ -201,19 +201,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Home = function Home() {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'div',
-            { className: 'text-xl' },
-            'I am the home component updated again'
-        ),
-        _react2.default.createElement(
-            'button',
-            { onClick: function onClick() {
-                    return console.log('Hi there');
-                } },
-            'Press Me'
+            "h1",
+            { className: "text-2xl text-green-500" },
+            "Hello World"
         )
     );
 };

@@ -3,8 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <div>
-            <div className="text-xl">I am the home component updated again</div>
-            <button onClick={() => console.log('Hi there')}>Press Me</button>
+            <h1 className="text-2xl text-green-500">Hello World</h1>
         </div>
     )
 };
