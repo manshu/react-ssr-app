@@ -142,7 +142,7 @@ exports.default = function (req) {
         _react2.default.createElement(_Routes2.default, null)
     ));
 
-    return '\n        <html>\n        <body>\n            <div id="root">' + content + '</div>\n            <script src="bundle.js"></script>\n        </body>\n        </html>\n    ';
+    return '\n        <html>\n        <head>\n        <link rel="stylesheet" href="css/app.css">\n        </head>\n        <body>\n            <div id="root">' + content + '</div>\n            <script src="js/bundle.js"></script>\n        </body>\n        </html>\n    ';
 };
 
 /***/ }),
@@ -205,7 +205,7 @@ var Home = function Home() {
         null,
         _react2.default.createElement(
             'div',
-            null,
+            { className: 'text-xl' },
             'I am the home component updated again'
         ),
         _react2.default.createElement(

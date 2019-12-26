@@ -10,8 +10,9 @@ const config = {
     // Tell webpack where to output the fil that is generated.
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, 'public/js')
     }
+
 };
 
 module.exports = merge(baseConfig, config);

@@ -12,9 +12,12 @@ export default (req) => {
 
     return `
         <html>
+        <head>
+        <link rel="stylesheet" href="css/app.css">
+        </head>
         <body>
             <div id="root">${content}</div>
-            <script src="bundle.js"></script>
+            <script src="js/bundle.js"></script>
         </body>
         </html>
     `;
