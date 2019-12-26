@@ -11,7 +11,7 @@ console.log(
 // by default the command line tool will be cmd! Check the docs:
 // https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback
 
-const build = exec("yarn run dev", { stdio: "inherit", windowsHide: true });
+const build = exec("yarn run prod", { stdio: "inherit", windowsHide: true });
 
 build.stdout && build.stdout.on("data", console.log);
 build.stderr && build.stderr.on("data", console.log);
