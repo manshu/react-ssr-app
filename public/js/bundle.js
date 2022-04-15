@@ -34494,7 +34494,7 @@ var Home = function Home() {
             _react2.default.createElement(
                 "h1",
                 { className: "text-2xl text-red-500" },
-                "Coming Soon 2020"
+                "Coming Soon 2023"
             )
         )
     );
