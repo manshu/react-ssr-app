@@ -4,8 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Routes from './Routes';
 
 
-ReactDOM.hydrate(
+ReactDOM.hydrate(document.querySelector('#root'),
     <BrowserRouter>
         <Routes />
-    </BrowserRouter>
-    , document.querySelector('#root'));
+    </BrowserRouter>);
