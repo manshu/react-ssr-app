@@ -23,19 +23,19 @@ var _react2 = _interopRequireDefault(_react);
 
 var _server = __webpack_require__(4);
 
-var _reactRouterDom = __webpack_require__(5);
+var _server2 = __webpack_require__(5);
 
-var _Routes = __webpack_require__(6);
+var _AppRoutes = __webpack_require__(6);
 
-var _Routes2 = _interopRequireDefault(_Routes);
+var _AppRoutes2 = _interopRequireDefault(_AppRoutes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports["default"] = function (req) {
     var content = (0, _server.renderToString)(_react2.default.createElement(
-        _reactRouterDom.StaticRouter,
+        _server2.StaticRouter,
         { location: req.path, context: {} },
-        _react2.default.createElement(_Routes2.default, null)
+        _react2.default.createElement(_AppRoutes2.default, null)
     ));
 
     return '\n        <html>\n        <head>\n        <link rel="stylesheet" href="css/app.css">\n        </head>\n        <body>\n            <div id="root">' + content + '</div>\n            <script src="js/bundle.js"></script>\n        </body>\n        </html>\n    ';
@@ -57,7 +57,7 @@ module.exports = require("react-dom/server");
 /* 5 */
 /***/ ((module) => {
 
-module.exports = require("react-router-dom");
+module.exports = require("react-router-dom/server");
 
 /***/ }),
 /* 6 */
@@ -73,9 +73,9 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(5);
+var _reactRouterDom = __webpack_require__(7);
 
-var _Home = __webpack_require__(7);
+var _Home = __webpack_require__(8);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -83,14 +83,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports["default"] = function () {
     return _react2.default.createElement(
-        'div',
+        _reactRouterDom.Routes,
         null,
-        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default })
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', element: _react2.default.createElement(_Home2.default, null) })
     );
 };
 
 /***/ }),
 /* 7 */
+/***/ ((module) => {
+
+module.exports = require("react-router-dom");
+
+/***/ }),
+/* 8 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -115,7 +121,7 @@ var Home = function Home() {
             _react2.default.createElement(
                 "h1",
                 { className: "text-2xl text-red-500" },
-                "Coming Soon 2023"
+                "Working"
             )
         )
     );

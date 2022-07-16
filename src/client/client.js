@@ -1,10 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import Routes from './Routes';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './AppRoutes';
 
 
-ReactDOM.hydrate(document.querySelector('#root'),
-    <BrowserRouter>
-        <Routes />
-    </BrowserRouter>);
+ReactDOM.hydrateRoot(
+    <Router>
+        <AppRoutes />
+    </Router>,
+    document.querySelector('#root'),
+);
